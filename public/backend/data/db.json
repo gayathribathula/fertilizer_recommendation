@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "FkGC-SZjm2bNo5ib87ktA",
+      "name": "Gayathri",
+      "email": "gayu@example.com",
+      "password": "$2a$10$rSns22C.aQSlQ3W5ZEI6V.cMk43ObrfHtxmikpOfF96xUhHxXOJ/e",
+      "role": "user"
+    }
+  ],
+  "recommendations": {
+    "gayu@example.com": [
+      {
+        "location": "Warangal",
+        "crop": "rice",
+        "ph": 6.5,
+        "n": 80,
+        "p": 40,
+        "k": 60,
+        "stage": "vegetative",
+        "fertilizer": "Urea + DAP",
+        "quantity": "100 kg Urea + 50 kg DAP per hectare",
+        "timing": "Split: 50% basal, 50% top dressing",
+        "id": "3ZgUxG6oIrTFSOVeC0PKZ",
+        "timestamp": "2025-11-14T21:40:35.444Z"
+      },
+      {
+        "crop": "rice",
+        "ph": 6.5,
+        "n": 80,
+        "p": 40,
+        "k": 60,
+        "stage": "vegetative",
+        "id": "GyOy5hQF14WVQAqWCWJat",
+        "timestamp": "2025-11-14T22:41:00.160Z"
+      }
+    ]
+  }
+}

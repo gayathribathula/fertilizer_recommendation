@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fertilizer Recommendation System</title>
+  <link rel="stylesheet" href="hack.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Fertilizer Recommendation System</h1>
+
+    <section id="auth-section">
+      <h2>Register / Login</h2>
+      <form id="auth-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Password" required />
+
+        <label for="role">Role:</label>
+        <select id="role">
+          <option value="user" selected>Farmer/User</option>
+          <option value="agronomist">Agronomist</option>
+        </select>
+
+        <div class="button-group" >
+          <button type="button" id="register-btn">Register</button>
+          <button type="button" id="login-btn">Login</button>
+        </div>
+      </form>
+      <div id="auth-message"></div>
+    </section>
+
+    <section id="recommendation-section" style="display:none;">
+      <h2>Enter Crop and Soil Details</h2>
+      <form id="recommendation-form">
+        <label for="location">Location / Area:</label>
+        <input type="text" id="location" required />
+
+        <label for="crop-select">Crop:</label>
+        <select id="crop-select" required>
+          <option value="">-- Select Crop --</option>
+          <option value="rice">Rice</option>
+          <option value="wheat">Wheat</option>
+          <option value="maize">Maize</option>
+          <option value="cotton">Cotton</option>
+        </select>
+
+        <fieldset>
+          <legend>Soil Parameters</legend>
+          <input type="number" step="0.1" id="ph" placeholder="Soil pH" required min="0" max="14" />
+          <input type="number" id="n" placeholder="Nitrogen (N) mg/kg" required min="0" />
+          <input type="number" id="p" placeholder="Phosphorus (P) mg/kg" required min="0" />
+          <input type="number" id="k" placeholder="Potassium (K) mg/kg" required min="0" />
+        </fieldset>
+
+        <label for="growth-stage">Growth Stage:</label>
+        <select id="growth-stage" required>
+          <option value="">-- Select Growth Stage --</option>
+          <option value="vegetative">Vegetative</option>
+          <option value="flowering">Flowering</option>
+          <option value="maturity">Maturity</option>
+        </select>
+
+        <button type="submit">Get Recommendation</button>
+      </form>
+
+      <div id="recommendation-result"></div>
+      <button id="logout-btn">Logout</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
